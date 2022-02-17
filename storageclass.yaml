@@ -7,5 +7,5 @@ reclaimPolicy: Retain   # Retain or Delete
 volumeBindingMode: WaitForFirstConsumer   # WaitForFirstConsumer or Immediate
 allowVolumeExpansion: true    # true or false
 parameters:
-  storageaccounttype: Premium_LRS
+  storageaccounttype: Premium_LRS   # Premium or Standard
   kind: Managed
