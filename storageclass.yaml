@@ -3,9 +3,9 @@ apiVersion: storage.k8s.io/v1
 metadata:
   name: azuredisk-premium-retain
 provisioner: kubernetes.io/azure-disk
-reclaimPolicy: Retain
-volumeBindingMode: WaitForFirstConsumer
-allowVolumeExpansion: true
+reclaimPolicy: Retain   # Retain or Delete
+volumeBindingMode: WaitForFirstConsumer   # WaitForFirstConsumer or Immediate
+allowVolumeExpansion: true    # true or false
 parameters:
   storageaccounttype: Premium_LRS
   kind: Managed
